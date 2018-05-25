@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.clock {
+font-family: sunflower;
+}
+
+.clock_box_1 {
+  width: 300px;
+  border: 1px solid black;
+  background: orange;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+}
+
+.clock_box_1a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 50px;
+}
+
+.clock_box_1b {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+
+.time-header {
+
+}
+
+.time-numeral {
+
+}

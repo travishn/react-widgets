@@ -9,7 +9,10 @@ class Clock extends React.Component{
     this.state = {
       seconds: this.time.getSeconds(),
       minutes: this.time.getMinutes(),
-      hours: this.time.getHours()
+      hours: this.time.getHours(),
+      day: this.time.getDate(),
+      month: this.time.getMonth(),
+      year: this.time.getFullYear()
     };
 
     this.tick = this.tick.bind(this);
@@ -17,9 +20,18 @@ class Clock extends React.Component{
 
   render () {
     return (
-      <div>
+      <div className = "clock">
         <h1>Ze Clock</h1>
-        <h2>Current Time: {this.state.hours}:{this.state.minutes}:{this.state.seconds}</h2>
+        <div className = "clock_box_1">
+          <section className = "clock_box_1a">
+            <h2 className = "time-header">Current time: </h2>
+            <h2 className = "time-numeral"> {this.state.hours}:{this.state.minutes}:{this.state.seconds}</h2>
+          </section>
+          <section className ="clock_box_1b">
+            <h2 className = "date-header">Current date: </h2>
+            <h2 className = "date-numeral"> {this.state.month}:{this.state.day}:{this.state.year}</h2>
+          </section>
+        </div>
       </div>
     );
   }

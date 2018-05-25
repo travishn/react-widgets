@@ -6,7 +6,6 @@ import Clock from './clock';
 const Root =  () => (
   <div>
     <Clock/>
-    <h1> It works hooray</h1>
   </div>
 );
 

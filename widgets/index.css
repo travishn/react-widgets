@@ -31,14 +31,13 @@ font-family: sunflower;
 }
 
 .Tabs {
-  font-family: sunflower;
+  font-family: Sunflower;
 }
 
 .Erything {
   background: lightblue;
   height: 150px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
 }
 
 .titles {
@@ -49,12 +48,17 @@ font-family: sunflower;
 
 .content {
   text-align: center;
+  color: white;
 }
 
 button {
   background: lightblue;
   border: none;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 li {
